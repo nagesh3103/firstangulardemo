@@ -1,0 +1,21 @@
+
+<div class="container fluid">
+    <div class="form-group">
+        <label for="Rating">Rating :</label>
+        <div class="star-rating">
+          <span *ngFor="let filled of stars; let index = index" (click)="onClick(index + 1)">
+            <ng-container *ngIf="filled">
+              <i class="fa fa-star" [style.color]="color"></i>
+            </ng-container>
+            <ng-container *ngIf="!filled">
+              <i class="fa fa-star-o" [style.color]="color"></i>
+            </ng-container>
+          </span>
+        </div>
+        
+    <div class="form-group">
+        <label for="comments">Comments</label>
+        <input type="text" name="Comments" class="form-control" id="Comments" >
+    </div>
+
+   
