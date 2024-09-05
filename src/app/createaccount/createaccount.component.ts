@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { Account } from '../model/Account';
 import { AccountService } from '../account.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-createaccount',
@@ -12,7 +13,7 @@ export class CreateaccountComponent {
   responseFlag:boolean=true;
   account=new Account("",'','',0,'');
 
-  constructor(private accountService:AccountService){
+  constructor(private accountService:AccountService,private router:Router){
 
   }
   createAccount(){

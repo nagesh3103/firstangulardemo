@@ -1,11 +1,11 @@
-export class atm{
+export class Atm{
     cardNumber:string;
     pin:string;
     accountNumber:string;
     cvv:string;
-    cardExpiry:string;
+    cardExpiry:Date;
 
-    constructor(cardNumber:string,pin:string,accountNumber:string,cvv:string,cardExpiry:string){
+    constructor(cardNumber:string,pin:string,accountNumber:string,cvv:string,cardExpiry:Date){
         this.cardNumber=cardNumber;
         this.pin=pin;
         this.accountNumber=accountNumber;

@@ -8,14 +8,17 @@ import { Observable } from 'rxjs';
 export class AtmService {
 
   constructor(private http:HttpClient) { }
-  createAtm(atm:any):Observable<any>{
-    console.log('in service'+JSON.stringify(atm));
-    const httpHeaders={
-      headers:new HttpHeaders({
-        'Content-Type':'application/json',
-        'Accept':'application/json'
-      })
-    };
-    return this.http.post("http://localhost:8080/api/createAtm",atm,httpHeaders);
-  }
-}
+
+  private apiUrl = 'http://localhost:8080/createAtm';
+  
+    createAtm(atm:any):Observable<any>{
+      console.log("From service" + JSON.stringify(atm));
+      const httpOptions ={
+        headers: new HttpHeaders({
+           'Content-Type': 'application/json',
+          'Accept': 'application/json'
+         })
+       };
+       return this.http.post(this.apiUrl,atm,httpOptions);
+    }
+    }
