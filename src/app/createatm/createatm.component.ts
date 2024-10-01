@@ -3,6 +3,7 @@ import { AtmService } from '../atm.service';
 import { AccountService } from '../account.service';
 import { Account } from '../model/Account';
 import { Atm } from '../model/Atm';
+import { Address } from '../model/Address';
 
 
 @Component({
@@ -11,14 +12,8 @@ import { Atm } from '../model/Atm';
   styleUrl: './createatm.component.css'
 })
 export class CreateatmComponent {
-  account:Account={
-    name:'',
-    mobileNumber:'',
-    pan:'',
-    balance:0,
-    accountNumber:''
-  
-  }
+  account=new Account("",'','',0,'',new Address('','','','',''));
+
   atm:Atm={
     cardNumber:'',
     pin:'',
@@ -42,6 +37,6 @@ export class CreateatmComponent {
   
 
 }
-function Createatm() {
-  throw new Error('Function not implemented.');
-}
+// function Createatm() {
+//   throw new Error('Function not implemented.');
+// }

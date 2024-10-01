@@ -20,5 +20,6 @@
         <input type="text" name="balance" class="form-control" [(ngModel)]="account.balance">
         
     </div>
-    <button type="submit" class="btn btn-primary" (click)="createAccount()">Create Account</button>
+    <app-address #custaddress></app-address>
+    <button type="submit" class="btn btn-primary" (click)="createAccount(custaddress)">Create Account</button>
 </div>

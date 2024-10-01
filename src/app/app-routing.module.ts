@@ -9,6 +9,7 @@ import { HelpComponent } from './component/help/help.component';
 import { AddingrestaurantComponent } from './addingrestaurant/addingrestaurant.component';
 import { CreateaccountComponent } from './createaccount/createaccount.component';
 import { CreateatmComponent } from './createatm/createatm.component';
+import { LoansearchComponent } from './loansearch/loansearch.component';
 
 const routes: Routes = [{
   path:'register',component:TemplateDrivenComponentComponent},
@@ -18,7 +19,8 @@ const routes: Routes = [{
   {path:'help',component:HelpComponent},
   {path:'add',component:AddingrestaurantComponent},
   {path:'createAccount',component:CreateaccountComponent},
-  {path:'createAtm',component:CreateatmComponent}
+  {path:'createAtm',component:CreateatmComponent},
+  {path:'searchAccount',component:LoansearchComponent}
   
 ];
 

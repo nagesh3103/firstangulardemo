@@ -14,7 +14,7 @@ export class UserComponent {
   subject = new Subject<string>();
   
   @Output()
-  userNameEmitter : EventEmitter<string> = new EventEmitter();
+  userNameEmitter : EventEmitter<string> = new EventEmitter(); 
   constructor(private userRegisterService: UserregisterService,private router:Router){
     this.subject.subscribe( data => {
       console.log('from subject subscriber data value'+ data);

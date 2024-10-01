@@ -18,6 +18,7 @@ import { AddingrestaurantComponent } from './addingrestaurant/addingrestaurant.c
 import { RatingComponent } from './rating/rating.component';
 import { CreateaccountComponent } from './createaccount/createaccount.component';
 import { CreateatmComponent } from './createatm/createatm.component';
+import { LoansearchComponent } from './loansearch/loansearch.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { CreateatmComponent } from './createatm/createatm.component';
     AddingrestaurantComponent,
     RatingComponent,
     CreateaccountComponent,
-    CreateatmComponent
+    CreateatmComponent,
+    LoansearchComponent
   ],
   imports: [
     BrowserModule,
